@@ -1,0 +1,17 @@
+git init
+git add .
+git status
+git commit -m "first commit"
+git remote add origin https://github.com/AdesegunAdesolaADEBOYE/DAVID.git
+git push -u origin master
+django-admin startproject 'projectname' .
+py manage.py makemigrations --dry-run --verbosity-3
+py manage.py migrate
+py manage.py runserver
+py manage.py startapp 'appname'
+py manage.py createsuperuser
+pip install coverage
+coverage run --omit='*/venv/*' manage.py test
+coverage html
+pip install djangorestframework
+
